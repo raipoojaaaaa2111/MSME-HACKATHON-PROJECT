@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "bolt-expo-nativewind",
+    "slug": "msme-project",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "digirakshak",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "owner": "raunak9025",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "description": "AI Cyber Police for MSMEs - Protecting businesses in their own language",
+  
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.digirakshak.cyberpolice"
+    },
+    "android": {
+      "package": "com.digirakshak.cyberpolice",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#2563EB"
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker",
+      "expo-file-system",
+      "expo-av",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#2563EB"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4fe8323a-b648-41b6-a07b-fbee5628f982"
+      }
+    },
+     "plugins": [
+      "expo-router"
+    ]
+  }
+}
